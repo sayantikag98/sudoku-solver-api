@@ -2,10 +2,13 @@
   "name": "sudoku-solver-api",
   "version": "1.0.0",
   "description": "A simple sudoku solver for a 9x9 sudoku grid",
-  "main": "index.js",
+  "main": "web.js",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index"
+    "start": "node web.js"
   },
   "author": "Sayantika Ghosh",
   "license": "ISC",
