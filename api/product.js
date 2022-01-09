@@ -1,6 +1,6 @@
 const express = require("express");
-const { inputConverter } = require("./inputOutputConverter");
-const methodController = require("./controller");
+const { inputConverter } = require("../inputOutputConverter");
+const methodController = require("../controller");
 
 const router = express.Router();
 
