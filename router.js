@@ -4,13 +4,16 @@ const methodController = require("./controller");
 
 const router = express.Router();
 
-router.get("/:id", (req, res) => {
-    const board = inputConverter(req.params.id);
+router.route("/")
+.get((req, res) => {
+    res.send("Sudoku Solver API");
+}).post((req, res) => {
+    const board = inputConverter(req.body.board);
     methodController(board, res);
 });
 
-router.post("/", (req, res) => {
-    const board = inputConverter(req.body.board);
+router.get("/:id", (req, res) => {
+    const board = inputConverter(req.params.id);
     methodController(board, res);
 });
 
