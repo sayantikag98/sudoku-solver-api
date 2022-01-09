@@ -1,6 +1,3 @@
-// const inputConverter = require("./inputOutputStringToArrayConverter");
-// const board = inputConverter("x81x");
-
 /*
 to check whether it is possible to insert a particular value for a particular (row, column)
 following the rules of sudoku that is having each of the values from 1 to 9 in each row 
