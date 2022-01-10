@@ -8,7 +8,7 @@ router.route("/")
 .get((req, res) => {
     res.send("Sudoku Solver API");
 }).post((req, res) => {
-    const board = inputConverter(req.body.board);
+    const board = inputConverter(req.body.input);
     methodController(board, res);
 });
 
