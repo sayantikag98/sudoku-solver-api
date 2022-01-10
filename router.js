@@ -12,8 +12,8 @@ router.route("/")
     methodController(board, res);
 });
 
-router.get("/:id", (req, res) => {
-    const board = inputConverter(req.params.id);
+router.get("/:input", (req, res) => {
+    const board = inputConverter(req.params.input);
     methodController(board, res);
 });
 
